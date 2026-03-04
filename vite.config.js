@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  base: "/candice-paralegal/",
+  base: "/paralegal-services-demo/",
   plugins: [react()],
   build: {
     outDir: "docs",

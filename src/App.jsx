@@ -28,21 +28,21 @@ function SceneScales() {
   const copyOpacity = useSpring(useTransform(scrollYProgress, [0.25, 0.5], [0, 1]));
 
   return (
-    <section id="story-scales" className="relative">
+    <section id="story-scales" className="relative pt-20 lg:pt-16">
       <div ref={ref} className="h-[220vh]">
-        <div className="sticky top-16 h-[calc(100vh-4rem)] flex items-center">
+        <div className="sticky top-16 h-auto lg:h-[calc(100vh-4rem)] flex items-start lg:items-center py-12 lg:py-0">
           <Container>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start lg:items-center">
               <div>
                 <motion.div style={{ opacity: badgeOpacity }}>
                   <Pill>Paralegal Support • Civil • Family • Small Business</Pill>
                 </motion.div>
-                <h1 className="mt-4 text-4xl md:text-6xl font-bold tracking-tight leading-[1.05]">
+                <h1 className="mt-8 md:mt-4 text-4xl md:text-6xl font-bold tracking-tight leading-[1.05]">
                   Clear, organized legal help—
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-cyan-400"> without the overwhelm</span>
                 </h1>
-                <motion.p style={{ opacity: copyOpacity }} className="mt-5 text-lg text-muted-foreground max-w-prose">
-                  Candice is a detail-driven paralegal who prepares filings, organizes discovery, and keeps cases moving—so you can focus on outcomes.
+                <motion.p style={{ opacity: copyOpacity }} className="mt-7 md:mt-5 text-lg text-muted-foreground max-w-prose">
+                  Paralegal Services Demo is a detail-driven paralegal service that prepares filings, organizes discovery, and keeps cases moving—so you can focus on outcomes.
                 </motion.p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <a href="#contact" className="rounded-xl border px-5 py-3 text-sm font-medium hover:bg-muted">
@@ -118,12 +118,12 @@ function ScenePhone() {
   return (
     <section id="story-phone" className="relative">
       <div ref={ref} className="h-[260vh]">
-        <div className="sticky top-16 h-[calc(100vh-4rem)]">
-          <Container className="h-full grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div className="sticky top-16 h-auto lg:h-[calc(100vh-4rem)]">
+          <Container className="h-full grid grid-cols-1 lg:grid-cols-2 gap-10 items-start lg:items-center">
             <div className="relative py-8">
               <h2 className="text-3xl md:text-4xl font-semibold">A calm, guided process</h2>
               <p className="mt-3 text-muted-foreground max-w-prose">
-                From intake to filing, Candice keeps every document and deadline in check.
+                From intake to filing, Paralegal Services Demo keeps every document and deadline in check.
               </p>
               <div className="mt-6 space-y-6">
                 {steps.map((step) => (
@@ -140,7 +140,7 @@ function ScenePhone() {
 
             <div className="flex items-center justify-center">
               <motion.div
-                className="relative w-[270px] md:w-[320px] aspect-[9/19.5] rounded-[36px] border bg-card shadow-2xl overflow-hidden"
+                className="relative w-[220px] sm:w-[270px] md:w-[320px] aspect-[9/19.5] rounded-[36px] border bg-card shadow-2xl overflow-hidden mt-6 lg:mt-0"
                 style={{ opacity: phoneOpacity, scale: phoneScale }}
               >
                 <div className="absolute left-1/2 -translate-x-1/2 top-0 mt-2 h-6 w-40 rounded-full bg-background/60 border" />
@@ -156,7 +156,7 @@ function ScenePhone() {
                     <div className="h-24 rounded-xl border bg-muted/40 p-3 text-xs">Intake Packet.pdf</div>
                     <div className="h-24 rounded-xl border bg-muted/40 p-3 text-xs">Draft Petition.docx</div>
                   </div>
-                  <div className="h-12 rounded-xl border bg-muted/40 p-3 text-xs">Message Candice…</div>
+                  <div className="h-12 rounded-xl border bg-muted/40 p-3 text-xs">Message us…</div>
                 </motion.div>
               </motion.div>
             </div>
@@ -230,10 +230,10 @@ function SceneCourthouse() {
                 </motion.svg>
               </div>
               <div className="order-1 lg:order-2">
-                <Pill>Candice Paralegal</Pill>
+                <Pill>Paralegal Services Demo</Pill>
                 <h3 className="mt-3 text-3xl font-semibold">Documents that stand up in court</h3>
                 <motion.p style={{ opacity: caption }} className="mt-3 text-muted-foreground max-w-prose">
-                  Clean structures, correct citations, and a diligent chain of revisions. Judges and clerks want clarity—Candice delivers it.
+                  Clean structures, correct citations, and a diligent chain of revisions. Judges and clerks want clarity—Paralegal Services Demo delivers it.
                 </motion.p>
                 <div className="mt-6 flex gap-3">
                   <a
@@ -311,11 +311,11 @@ function Contact() {
             <Pill>Contact</Pill>
             <h3 className="mt-3 text-3xl font-semibold">Let’s talk about your matter</h3>
             <p className="mt-3 text-muted-foreground max-w-prose">
-              Describe your needs and timeline. Candice will reply with next steps and a simple checklist to get moving.
+              Describe your needs and timeline. Paralegal Services Demo will reply with next steps and a simple checklist to get moving.
             </p>
             <div className="mt-6 text-sm text-muted-foreground">
               <div>
-                Email: <a className="underline" href="mailto:hello@candiceparalegal.example">hello@candiceparalegal.example</a>
+                Email: <a className="underline" href="mailto:hello@paralegalservicesdemo.example">hello@paralegalservicesdemo.example</a>
               </div>
               <div>
                 Phone: <a className="underline" href="tel:+12025550123">(202) 555-0123</a>
@@ -347,7 +347,7 @@ function CandiceParalegalLanding() {
           <div className="flex h-16 items-center justify-between">
             <a href="#" className="flex items-center gap-2 font-semibold">
               <div className="h-6 w-6 rounded-lg bg-gradient-to-br from-indigo-500 to-cyan-500" />
-              Candice Paralegal
+              Paralegal Services Demo
             </a>
             <nav className="hidden md:flex items-center gap-6 text-sm text-muted-foreground">
               <a className="hover:text-foreground" href="#services">
@@ -377,7 +377,7 @@ function CandiceParalegalLanding() {
       <footer className="border-t">
         <Container>
           <div className="py-8 text-sm flex items-center justify-between text-muted-foreground">
-            <span>© {new Date().getFullYear()} Candice Paralegal</span>
+            <span>© {new Date().getFullYear()} Paralegal Services Demo</span>
             <div className="flex gap-4">
               <a href="#">Privacy</a>
               <a href="#">Terms</a>
