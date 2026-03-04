@@ -1,4 +1,4 @@
-# Candice Paralegal – Scrollytelling Landing
+# Paralegal – Scrollytelling Landing
 
 React + Vite demo landing page showcasing scroll-driven storytelling for a paralegal portfolio. Built with Tailwind CSS and Framer Motion.
 
