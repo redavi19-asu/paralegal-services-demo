@@ -345,7 +345,7 @@ function CandiceParalegalLanding() {
       <header className="sticky top-0 z-40 border-b backdrop-blur supports-[backdrop-filter]:bg-background/70">
         <Container>
           <div className="flex h-16 items-center justify-between">
-            <a href="#" className="flex items-center gap-2 font-semibold">
+            <a href="/" className="flex items-center gap-2 font-semibold">
               <div className="h-6 w-6 rounded-lg bg-gradient-to-br from-indigo-500 to-cyan-500" />
               Paralegal Services Demo
             </a>
